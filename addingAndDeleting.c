@@ -19,13 +19,12 @@ int main(){
              n=getInput();
              p=addAtTheBeg(n,l);
              lenght++;
-             display(p);
             break;
             case 2:
               n=getInput();
               p=addAtTheEnd(n,l);
               lenght++;
-              display(p);
+        
             break;
             case 3:
               pos=getPosition(lenght);
@@ -38,22 +37,23 @@ int main(){
               else{
                 p=addBefore(n,pos,l);
               }
-              display(p);
+            
             break;
             case 4:
               p=deletFromBeg(l);
-              display(p);
+              
             break;
             case 5:
               p=deletFromEnd(l);
-              display(p);
+              
             break;
             case 6:
               pos=getPosition(lenght);
              p=deletFromMiddle(pos,l);
-             display(p);
+            
             break;
         }
+         display(p);
         printf("you want to continue ?  alright enter y for yes or n for n \n");
         scanf("%c",&choice2);
     }
